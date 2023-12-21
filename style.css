@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+.calc-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    width: 340px;
+    height: 500px;
+    border-radius: 30px;
+    border: 2px solid white;
+    box-shadow: 5px 10px 15px;
+    background-color: white;
+}
+@media(max-width:991px){
+    .calc-container{
+        flex: 33.3%;
+    }
+}
+@media(max-width:767px){
+    .calc-container{
+        flex: 50%;
+    }
+}
+@media(max-width:567px){
+    .calc-container{
+        flex: 100%;
+    }
+}
+
+.output-tbox{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+   /* box-shadow: 3px 2px 5px ;*/
+}
+.calc-row{
+    margin-left:40px ;
+    padding: 10px;
+}
+.clr-btn,.delete-btn{
+   
+    width: 60px;
+    height: 60px;
+    border-radius:15px ;
+}
+.btn,.equal-btn{
+    width: 60px;
+    height: 60px;
+    border-radius:15px ;
+}
+.equal-btn{
+    width: 120px;
+}
+.btn:hover,.clr-btn:hover,.delete-btn:hover,.equal-btn:hover{
+    background-color:rgba(255,255,255,.9);
+}
